@@ -1,0 +1,23 @@
+// convert function to use recursion
+
+#include <iostream>
+using namespace std;
+
+void sign(int); // Function prototype 
+
+int main()
+{
+	sign(5); // function call
+
+	return 0;
+}
+
+void sign(int n) // function
+{
+	while (n > 0)
+	{
+		cout << "No PARKING. \n";
+		return sign(n - 1); // recursive function
+	}
+
+}
