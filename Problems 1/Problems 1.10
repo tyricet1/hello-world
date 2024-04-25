@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//variables
+	double gallonsUsed;
+	double milesDriven;
+	double MPG;
+
+	//input info needed
+
+	cout << "welcome to the Online MILES PER GALLON calculator!\n";
+	cout << "Please enter the Miles Driven.\n";
+	cin >> milesDriven;
+	cout << "Please enter the Gallons Used\n";
+	cin >> gallonsUsed;
+
+	//calculations
+
+	MPG = milesDriven / gallonsUsed;
+
+	//output
+
+	cout << "You are getting " << MPG << " miles per gallon." << endl;
+
+	return 0;
+}
