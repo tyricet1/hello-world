@@ -1,0 +1,34 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	cout << "Hello welcome to the BEST resturant!\n";
+
+	double charge = 88.67;
+	double tax = .0675;
+	double tip = .2;
+	double Taxtotal;
+	double Subtotal;
+	double Finaltotal1;
+	double Finaltotal2;
+
+	Taxtotal = charge * tax;
+
+	Subtotal = charge + Taxtotal;
+
+	Finaltotal1 = Subtotal * tip; 
+
+	Finaltotal2 = Finaltotal1 + Subtotal; 
+
+	cout << "This is your itemized bill.\n";
+
+	cout << "Meal cost: " << charge << endl;
+	cout << "Tax: " << Taxtotal << endl;
+	cout << "Subtotal: " << Subtotal << endl;
+	cout << "Tip: 20%" << endl;  
+	cout << "Total Bill: " << Finaltotal2<< endl; 
+
+	return 0;
+}
