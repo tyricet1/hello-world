@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// variables
+	double sharesAmount = 750;
+	double stockPrice = 35.00;
+	double commission = .02;
+	double subTotal;
+	double commissionTotal;
+	double finalTotal;
+
+	cout << "This program will help you figure out the amount you have to pay for the stock.\n";
+
+	// calculations
+
+	subTotal = sharesAmount * stockPrice;
+	commissionTotal = subTotal * commission;
+	finalTotal = subTotal + commissionTotal;
+
+	cout << "Subtotal: $" << subTotal << endl;
+	cout << "Commission: $" << commissionTotal << endl;
+	cout << "Final Total: $" << finalTotal << endl;
+
+
+
+	return 0;
+}
