@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	string name, address, city, state, zipCode, collegeMajor;
+	int phoneNumber;
+
+	cout << "Enter your information.\n";
+	cin >> name;
+	cin >> address;
+	cin >> city;
+	cin >> state;
+	cin >> zipCode;
+	cin >> phoneNumber;
+	cin >> collegeMajor;
+
+	cout << "Name: " << name << endl
+		<< "Address: " << address << endl
+		<< "City: " << city << endl
+		<< "state: " << state << endl
+		<< "ZipCode: " << zipCode << endl
+		<< "Phone Number: " << phoneNumber << endl
+		<< "College Major: " << collegeMajor << endl;
+
+	return 0;
+}
