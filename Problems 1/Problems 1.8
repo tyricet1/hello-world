@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// variables
+
+	double item1 = 15.95;
+	double item2 = 24.95;
+	double item3 = 06.95;
+	double item4 = 12.95;
+	double item5 = 03.95;
+	double salesTax = .07;
+	double subTotal;
+	double total;
+
+	cout << "Welcome to the DISCOUNT STORE!" << endl;
+
+	subTotal = item1 + item2 + item3 + item4 + item5;
+	total = subTotal * salesTax + subTotal;
+
+	cout << "Subtotal amount: $" << subTotal << endl;
+
+	cout << "THe amount owed is $" << total << endl;
+
+	return 0;
+}
