@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// variables
+
+	double squareFeet1 = 43560;
+	double squareFeet2 = 391867;
+	double acre;
+
+	cout << "The program calculates the acres." << endl;
+
+	// calculations
+
+	acre = squareFeet2 / squareFeet1;
+
+	//output calculations
+
+	cout << "The amount of acres are " << acre << " acres." << endl;
+
+	return 0;
+}
