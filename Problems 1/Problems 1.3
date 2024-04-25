@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double purchase = 95.00; 
+	double Statetax = .04; 
+	float Citytax = .02; 
+	double total; 
+	double Subtotal1; 
+	double Subtotal2; 
+	double Subtotal3; 
+
+	Subtotal1 = purchase * Statetax; 
+	Subtotal2 = purchase * Citytax; 
+	Subtotal3 = Subtotal1 + Subtotal2;  
+
+	cout << "the subtotal 1 is " << Subtotal1 << endl; 
+	cout << "the subtotal 2 is " << Subtotal2 << endl; 
+	cout << "the subtotal 3 is " << Subtotal3 << endl; 
+
+
+	total = purchase + Subtotal3; 
+
+	cout << "the total is " << total << endl;
+
+	return 0;
+}
