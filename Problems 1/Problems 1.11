@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//variables
+
+	double numberOfGallons;
+	double averageMilesPerGallon;
+	double distance;
+	double distance1;
+	double inTown = 23.5;
+	double highway = 28.9;
+
+	 //get input
+	cout << "please enter the number of gallons used: \n";
+	cin >> numberOfGallons; 
+
+	// calculate 
+	distance = numberOfGallons * inTown;
+	distance1 = numberOfGallons * highway;
+
+	cout << "the average driven in town is: " << distance << endl;
+	cout << "the average driven on the highway is: " << distance1 << endl;
+	
+	return 0;
+}
