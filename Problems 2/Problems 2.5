@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// variables
+	double numberOfMales;
+	double numberOfFemales;
+	double percentMales;
+	double percentFemales;
+	double totalNumberStudents;
+
+	//get data
+	cout << "How many student are there in the classroom: ";
+	cin >> totalNumberStudents;
+	cout << "How many male students are in your classroom: ";
+	cin >> numberOfMales;
+	cout << "How many female students are in your classroom: ";
+	cin >> numberOfFemales;
+
+
+	//Calculations
+	percentMales = (numberOfMales / totalNumberStudents) * 100;  
+	percentFemales = (numberOfFemales / totalNumberStudents) * 100;
+
+	//output
+	cout << "\nThe percentage of males in this class is: " << setprecision(2) << fixed << percentMales << "% " << endl << endl;
+	cout << "The percentage of females in this class is: " << setprecision(2) << fixed << percentFemales << "% " << endl << endl;
+
+	return 0;
+}
