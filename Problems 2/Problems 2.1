@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//variables
+	double numberOfGallons;
+	double numberOfMiles;
+	double MPG;
+
+	cout << "This program will tell you the MPG.\n" << endl;
+
+	// get input
+	cout << "Enter the number of miles driven.\n";
+	cin >> numberOfMiles;
+
+	cout << "Enter the number of gallons the car holds.\n";
+	cin >> numberOfGallons;
+
+	// calculation
+	MPG = numberOfMiles / numberOfGallons;
+
+	// display the output
+	cout << "You get " << MPG << " miles per gallon.\n";
+
+
+	return 0;
+}
