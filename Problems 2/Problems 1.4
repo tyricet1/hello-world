@@ -1,0 +1,51 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// variables
+	string month1;
+	string month2;
+	string month3;
+	string month4;
+	string month5;
+	double rainFall;
+	double rainFall1;
+	double rainFall2;
+	double rainFall3;
+	double rainFall4;
+	double average;
+
+	cout << "This program will display the averge rainfall for the months entered. \n\n";
+
+	//get data
+	cout << "Enter the months you wish to calculate the rain fall: \n";
+	cin >> month1;
+	cout << "Enter the amout of rainfall for " << month1 << ": ";
+	cin >> rainFall;
+	cout << "Enter the next month: ";
+	cin >> month2;
+	cout << "Enter the amout of rainfall for " << month2 << ": ";
+	cin >> rainFall1;
+	cout << "Enter the next month: ";
+	cin >> month3; 
+	cout << "Enter the amout of rainfall for " << month3 << ": ";
+	cin >> rainFall2;
+	cout << "Enter the next month: ";
+	cin >> month4;
+	cout << "Enter the amout of rainfall for " << month4 << ": ";
+	cin >> rainFall3;
+	cout << "Enter the next month: ";
+	cin >> month5;
+	cout << "Enter the amout of rainfall for " << month5 << ": ";
+	cin >> rainFall4;
+
+	//Calculations
+	average = (rainFall + rainFall1 + rainFall2 + rainFall3 + rainFall4) / 5;
+
+	//output
+	cout << "The average rainfall is: " << average << endl;
+
+	return 0;
+}
