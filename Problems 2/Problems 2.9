@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main()
+{
+	// variables
+	double calories = 30;
+	double cookies;
+	double totalCalories;
+
+	//get data
+	cout << "How many cookies did you eat: ";
+	cin >> cookies;
+
+	//Calculations
+	totalCalories = cookies * calories;
+
+	//output
+
+	cout << "The amount of calories consumed are: " << totalCalories << " calories!" << endl;
+
+	return 0;
+}
