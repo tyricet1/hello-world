@@ -1,0 +1,45 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main()
+{
+	// variables
+	double adultTickets = 10.00;
+	double childTickets = 06.00;
+	double grossProfit;
+	double netProfit;
+	double distributorPaid;
+	double adultTicketsSold;
+	double childTicketsSold;
+	string movieName;
+
+	cout << "Lets see how much money the MOVIE made tonight! \n";
+
+	//get data
+	cout << "What's the name of the movie that was playing tonight: ";
+	cin >> movieName;
+	cout << "\nHow many adult ticket were sold for tonight's movie: ";
+	cin >> adultTicketsSold; 
+	cout << "\nHow many child ticket were sold for tonight's movie: ";
+	cin >> childTicketsSold;
+
+	//Calculations
+
+	grossProfit = adultTicketsSold * adultTickets + childTicketsSold * childTickets;
+	netProfit = grossProfit * .20;
+	distributorPaid = grossProfit - netProfit;
+
+	//output
+
+	cout << "Movie Name: " << left << setw(12) << movieName << endl;
+	cout << "Adult Tickets Sold: " << setw(25) << adultTicketsSold << endl;
+	cout << "Child Tickets Sold: " << setw(25) << childTicketsSold << endl;
+	cout << "Gross Box Office Profits: " << setw(28) << setprecision(2) << fixed << grossProfit << endl;
+	cout << "Net Box Office Profits: " << setw(30) << setprecision(2) << fixed << netProfit << endl;
+	cout << "Amount Paid To Distributor: " << setw(25) << setprecision(2) << fixed << distributorPaid << endl;
+
+
+	return 0;
+}
