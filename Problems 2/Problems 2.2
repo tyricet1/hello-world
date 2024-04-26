@@ -1,0 +1,36 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// variables
+	double classA = 15.00;
+	double classB = 12.00;
+	double classC = 09.00;
+	double classATickets;
+	double classBTickets;
+	double classCTickets;
+	double incomeGenerated;
+
+	cout << "Welcome to the TICKET HUB!\n";
+
+	//get data
+
+	cout << "How many class A do you want to buy? \n";
+	cin >> classATickets;  
+	cout << "How many class B do you want to buy? \n";
+	cin >> classBTickets;
+	cout << "How many class C do you want to buy? \n";
+	cin >> classCTickets;
+
+	//Calculations
+
+	incomeGenerated = classA * classATickets + classB * classBTickets + classC + classCTickets;
+
+	//output
+
+	cout << "The income generated for todays game is: $" << setprecision(2) << fixed << incomeGenerated << endl << endl;
+
+	return 0;
+}
