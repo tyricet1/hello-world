@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// variables
+	double C;
+	double F;  
+	
+
+	cout << "This program will convert celcius to Farienheit.\n";
+
+	//get data
+	cout << "Please enter the celcius tempeture please. \n";
+	cin >> C;
+	
+	//Calculations
+
+	F = C * 9/5 + 32;
+
+	//output
+
+	cout << "The current Farienheit is " << F << endl;
+
+	return 0;
+}
