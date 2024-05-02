@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// variables
+	double const insurance = .80;
+	double buildingCost;
+	double insuranceNeeded;
+	
+	cout << "This Program will tell the minimum amount of insurace to buy for the property" << endl;
+
+	//get data
+	cout << "Enter the replacement cost of a building.\n";
+	cin >> buildingCost;
+
+	//Calculations
+	insuranceNeeded = insurance * buildingCost;
+
+	//output
+	cout << setprecision(2) << fixed;
+	cout << "The minimum amount of insurance you should buy for the property is $" << insuranceNeeded << "." << endl;
+
+	return 0;
+}
