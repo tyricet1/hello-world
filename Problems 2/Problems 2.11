@@ -1,0 +1,45 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// variables
+	double loanPayment;
+	double insurance;
+	double gas;
+	double oil;
+	double tires;
+	double maintenance;
+	double monthlyCost;
+	double annualCost;
+
+
+	cout << "Enter the monthly costs for the following expenses incurred.\n";
+
+	//get data
+	cout << "How much do you pay for your loan: ";
+	cin >> loanPayment;
+	cout << "How much do you pay for insurance: ";
+	cin >> insurance;
+	cout << "How much do you pay for gas: ";
+	cin >> gas;
+	cout << "How much do you pay for your oil: ";
+	cin >> oil;
+	cout << "How much do you pay for your tires: ";
+	cin >> tires;
+	cout << "How much do you pay for your maintenance: ";
+	cin >> maintenance;
+
+	
+	//Calculations
+
+	monthlyCost = loanPayment + insurance + gas + oil + tires + maintenance;
+	annualCost = monthlyCost * 12;
+
+	//output
+	cout << "The monthly cost is $" << setprecision (2) << fixed << monthlyCost << endl << endl;
+	cout << "The monthly cost is $" << setprecision(2) << fixed << annualCost << endl << endl;
+
+	return 0;
+}
