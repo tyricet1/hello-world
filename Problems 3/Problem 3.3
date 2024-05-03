@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// variables
+	int month;
+	int day = 0;
+	int year;
+
+
+	cout << "This program will figure if the date you entered is magic. \n\n";
+
+	//get data
+	cout << "Enter a month in numerical form (1-12). \n";
+	cin >> month;
+	cout << "Enter a day (1-31). \n";
+	cin >> day;
+	cout << "Enter a two-digit year (00-99). \n";
+	cin >> year;
+
+	//decision
+	if (month * day == year)
+	{
+		cout << "It's magic! \n\n";
+	}
+	else
+	{
+		cout << "It's not magic.";
+	}
+	return 0;
+}
