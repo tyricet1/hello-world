@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// variables
+	double rectangle1Length;
+	double Rectangle1Width;
+	double rectangle2Length;
+	double Rectangle2Width;
+	double area1 = 0;
+	double area2 = 0;
+
+	cout << "This program will determain which rectangle has a greater area. \n\n";
+
+	//get data
+	cout << "Please enter the length and width of rectangle 1. \n";
+	cin >> rectangle1Length >> Rectangle1Width;
+	cout << "Please enter the length and width of rectangle 2. \n";
+	cin >> rectangle2Length >> Rectangle2Width;
+
+	//Calculations
+	area1 = rectangle1Length * Rectangle1Width;
+	area2 = rectangle2Length * Rectangle2Width;
+	
+	//decision
+	if (area1 > area2)
+	{
+		cout << "Reactangle one is greater than rectangle two.\n\n";
+	}
+	else
+	{
+		cout << "Reactangle two is greater than rectangle one.\n\n";
+	}
+
+	//output
+	cout << "The area of rectangle one is: " << area1 << endl << endl;
+	cout << "The area of rectangle two is: " << area2 << endl;
+
+	return 0;
+}
