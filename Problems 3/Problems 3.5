@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// variables
+	double weight;
+	double height;
+	double BMI;
+	
+	cout << "This program will determaine the BMI. \n\n";
+
+	//get data
+	cout << "Please enter your weight: ";
+	cin >> weight;
+	cout << "Please enter your height (in inches): ";
+	cin >> height;
+	
+	//Calculations
+	BMI = 703 * weight / pow(height,2.0);
+
+	//decision
+	if (BMI < 18.5)
+	{
+		cout << "Your weight is below weight.\n\n";
+	}
+	if (BMI > 25.01)
+	{
+		cout << "You are overweight.\n\n";
+	}
+	else
+	{
+		cout << "Your weight is OPTIMAL!!!\n\n";
+	}
+
+	//output
+	cout << "you're BMI is " << BMI << endl;
+
+	return 0;
+}
