@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "this program will do such and such so hear it is.\n\n";
+	//variables
+
+	string color1;
+	string color2;
+	string result;
+
+	//get data
+	cout << "Please enter two colors.\n";
+	cin >> color1;
+	cin >> color2;
+
+	//decision time
+	if (color1 == "blue" || color1 == "red" || color1 == "yellow" || color2 == "blue" || color2 == "red" || color2 == "yellow")
+	{
+		if ((color1 == "red" && color2 == "blue") || (color1 == "blue" && color2 == "red"))
+		{
+			result = "purple";
+		}
+		else if ((color1 == "red" && color2 == "yellow") || (color1 == "yellow" && color2 == "red"))
+		{
+			result = "orange";
+		}
+		else if ((color1 == "blue" && color2 == "yellow") || (color1 == "yellow" && color2 == "blue"))
+		{
+			result = "green";
+		}
+		else
+		{
+			cout << "Invalid input." << endl;
+		}
+	}
+	cout << "the secondary color is " << result << endl;
+	return 0;
+}
