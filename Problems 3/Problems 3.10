@@ -1,0 +1,48 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	cout << "This is the Game changer.\n\n";
+
+	//variables
+	double quarters;
+	double dimes;
+	double pennies;
+	double nickels;
+	double result;
+	//get data
+	cout << "Please enter the amount of coins required to make exactly one dollar.\n";
+	cout << "Quarters: ";
+	cin >> quarters;
+	cout << "Dimes: ";
+	cin >> dimes; 
+	cout << "Nickels: ";
+	cin >> nickels; 
+	cout << "Pennies: ";
+	cin >> pennies; 
+	
+	result = pennies * .01 + nickels * .05 + dimes * .10 + quarters * .25;
+
+	//decision time
+
+	if (result == 1)
+	{
+		cout << "Congratulations on winning the GAME. \n\n";
+	}
+	else if (result > 1)
+	{
+		cout << "the amount was too much.\n\n";
+	}
+	else if (result < 1)
+	{
+		cout << "The amount was too low.\n\n";
+	}
+
+	// output
+
+	cout << "The amount is $" << fixed << setprecision(2) << result << endl;
+
+	return 0;
+}
