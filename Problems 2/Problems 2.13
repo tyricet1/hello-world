@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	cout << "This program will convert US dollar amounts. \n";
+
+	// variables
+	 const double YEN_PER_DOLLAR = 98.93;
+	 const double EUROS_PER_DOLLAR = 0.74;
+	 double US_Dollar;
+	 double YEN;
+	 double EUROS;
+
+	//get data
+	 cout << "Please enter the US dollar amount please.\n";
+	 cin >> US_Dollar;
+
+	//Calculations
+	 YEN = US_Dollar * YEN_PER_DOLLAR;
+	 EUROS = US_Dollar * EUROS_PER_DOLLAR;
+
+	//decision
+
+	//output
+	 cout << "The Yen amount is " << YEN << endl;
+	 cout << "\nThe EUROS amount is " << EUROS << endl;
+
+
+	return 0;
+}
