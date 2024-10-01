@@ -1,0 +1,29 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std;
+
+int main()
+{
+	int count = 17;
+
+	while (true)
+	{
+		cout << "fa Ammo: " << count << endl; 
+		if (count > 0)
+		{
+			count -= 1;
+			this_thread::sleep_for(chrono::milliseconds(100));
+		}
+		else
+		{
+			cout << "reload" << endl;
+			count = 17;
+			this_thread::sleep_for(chrono::seconds(1));
+			break; // This will exit the loop immediately after the first iteration
+		}
+	}
+	//decision time
+	
+	return 0;
+}
